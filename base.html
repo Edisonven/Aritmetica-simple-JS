@@ -22,21 +22,19 @@
                 <button onclick="
                 span= document.querySelector('.cantidad')
                 sumar= Number(span.innerHTML)
-                sumar= sumar + 1
-                span.innerHTML= (sumar)
+                span.innerHTML= sumar + 1
                 total= document.querySelector('.valor-total')
                 calculo =Number(total.innerHTML)
-                calculo= precio * sumar
+                calculo= precio * span.innerHTML
                 total.innerHTML=(calculo)
                 ">+</button>
                 <button class="restar" onclick="
                 span= document.querySelector('.cantidad')
                 restar= Number(span.innerHTML)
-                restar= restar - 1
-                span.innerHTML= (restar)
+                span.innerHTML= restar - 1
                 total= document.querySelector('.valor-total')
                 calculo =Number(total.innerHTML)
-                calculo= precio * restar
+                calculo= precio * span.innerHTML
                 total.innerHTML=(calculo)
                 ">-</button>
             </p>
